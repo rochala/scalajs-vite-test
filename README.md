@@ -1,17 +1,9 @@
 ## Scala.Js - Vite project template
 
+Template license
 ----------------
+Written in 2022 by Scala Center
 
-## Usage
-
-This is a sbt project configured specifically for Scala.Js and Vite.
-
-### Adding new dependencies
-
-To add new dependencies, do it with `yarn add ${dependencyName}` or if you use npm `npm install ${dependencyName}`
-
-### Starting dev server
-
-To start Scala.Js - Vite developement server, you first need to start incremental compilation for code.
-It is done by running `sbt ~fastLinkJS` directly from shell of just `~fastLinkJS` from SBT shell instance.
-The next step is to start the server. To do it, run `yarn dev` or if you use npm `npm run dev` in your terminal.
+To the extent possible under law, the author(s) have dedicated all copyright and related
+and neighboring rights to this template to the public domain worldwide.
+This template is distributed without any warranty. See <https://creativecommons.org/publicdomain/zero/1.0/>.
