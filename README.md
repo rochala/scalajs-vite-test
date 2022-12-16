@@ -1,4 +1,4 @@
-## Scala.Js - Vite project template
+## Scala.js - Vite project template
 
 Template license
 ----------------

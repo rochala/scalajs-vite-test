@@ -26,8 +26,8 @@ function printSbtTask(task) {
 }
 
 const replacementForPublic = isDev()
-  ? printSbtTask("publicDev")
-  : printSbtTask("publicProd");
+  ? printSbtTask("fastLinkJSOutput")
+  : printSbtTask("fullLinkJSOutput");
 
 export default defineConfig({
   resolve: {

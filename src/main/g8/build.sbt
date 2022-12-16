@@ -1,8 +1,5 @@
 import org.scalajs.linker.interface.ModuleSplitStyle
 
-val publicDev = taskKey[String]("output directory for dev server")
-val publicProd = taskKey[String]("output directory for build")
-
 lazy val root = project
   .in(file("."))
   .enablePlugins(ScalaJSPlugin)
@@ -18,9 +15,6 @@ lazy val root = project
     },
 
     libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "2.3.0",
-
-    publicDev := linkerOutputDirectory((Compile / fastLinkJS).value).getAbsolutePath(),
-    publicProd := linkerOutputDirectory((Compile / fullLinkJS).value).getAbsolutePath(),
   )
 
 def linkerOutputDirectory(v: Attributed[org.scalajs.linker.interface.Report]): File = {
